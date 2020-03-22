@@ -6,7 +6,7 @@ import ViewContainer from "../components/ViewContainer";
 import ContentContainer from "../components/ContentContainer";
 import { Button, ButtonText } from "../components/Button";
 
-import styled from "styled-components";
+import styled from "styled-components/native";
 
 import TestImage from "../assets/images/testimage1.png";
 import TestImage2 from "../assets/images/testimage2.png";

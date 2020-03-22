@@ -5,7 +5,7 @@ import { ScrollView } from "react-native-gesture-handler";
 import ViewContainer from "../components/ViewContainer";
 import ContentContainer from "../components/ContentContainer";
 import { Button, ButtonText } from "../components/Button";
-import styled from "styled-components";
+import styled from "styled-components/native";
 
 const HalloText = styled.Text`
   color: #7cceeb;
