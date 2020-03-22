@@ -8,6 +8,7 @@ export default TextInputField = styled.TextInput`
   text-align: center;
   font-size: 34px;
   text-align: center;
+  color: #c67a77;
 
   border-bottom-width: 2px;
   border-bottom-color: ${props => (props.filled ? "#5F7195" : "#5F7195")};

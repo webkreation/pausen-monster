@@ -13,7 +13,7 @@ export const MonsterText = styled.Text`
 export const SubHeading = styled.Text`
   color: #5f7195;
   font-size: 72px;
-  line-height: 60px;
+  line-height: 72px;
   font-family: "Grold-Bold";
   text-align: center;
 `;
