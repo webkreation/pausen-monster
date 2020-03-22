@@ -12,6 +12,7 @@ import MainNavigator from "./navigation/MainNavigator";
 import LoginNavigator from "./navigation/LoginNavigator";
 
 import useLinking from "./navigation/useLinking";
+import SetupScreen from "./screens/15_SetupScreen";
 
 const Stack = createStackNavigator();
 
@@ -68,6 +69,11 @@ export default function App(props) {
             <Stack.Screen
               name="Onboarding"
               component={OnboardingScreen}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Setup"
+              component={SetupScreen}
               options={{ headerShown: false }}
             />
 

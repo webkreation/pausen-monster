@@ -27,7 +27,7 @@ export default function MainScreen({ navigation }) {
           Deine Pause, deine Zeit. Bring die Routine zurück in deinen Alltag und
           nimm an verschiedemem Aktivitäten teil!
         </Description>
-        <Button onPress={() => navigation.navigate("MainNavigator")}>
+        <Button onPress={() => navigation.navigate("Setup")}>
           <ButtonText>LOS GEHT'S!</ButtonText>
         </Button>
       </ContentContainer>
