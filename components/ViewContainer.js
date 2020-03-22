@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 const ViewContainer = styled.View`
   flex: 1;
-  background-color: #ffffff;
+  background-color: #efe7dd;
   margin-bottom: ${props =>
     props.keyboardHeight
       ? Platform.OS === "ios"

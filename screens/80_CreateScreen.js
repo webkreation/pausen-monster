@@ -65,7 +65,11 @@ export default function MainScreen({ navigation }) {
     <ViewContainer>
       <ScrollView contentContainerStyle={styles.contentContainer}>
         <ContentContainer>
-          <Headline>{`Content Screen`}</Headline>
+          <Headline>{`Inhalt\nerstellen`}</Headline>
+
+          <Button onPress={() => navigation.navigate("MainNavigator")}>
+            <ButtonText>Teilen</ButtonText>
+          </Button>
         </ContentContainer>
       </ScrollView>
     </ViewContainer>
