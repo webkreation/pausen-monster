@@ -9,6 +9,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import OnBoardingScreen from "./screens/00_OnBoardingScreen";
 import BottomTabNavigator from "./navigation/BottomTabNavigator";
 import MainNavigator from "./navigation/MainNavigator";
+import LoginNavigator from "./navigation/LoginNavigator";
 
 import useLinking from "./navigation/useLinking";
 
@@ -32,7 +33,9 @@ export default function App(props) {
         // Load fonts
         await Font.loadAsync({
           ...Ionicons.font,
-          "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf")
+          "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf"),
+          "Grold-Regular": require("./assets/fonts/GroldRounded-Regular.ttf"),
+          "Grold-Bold": require("./assets/fonts/GroldRounded-Bold.ttf")
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service
@@ -57,9 +60,13 @@ export default function App(props) {
           initialState={initialNavigationState}
         >
           <Stack.Navigator>
-            {/* <Stack.Screen name="OnBoarding" component={OnBoardingScreen} /> */}
             <Stack.Screen
-              name="Main"
+              name="LoginNavigator"
+              component={LoginNavigator}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="MainNavigator"
               component={MainNavigator}
               options={{ headerShown: false }}
             />
@@ -73,6 +80,6 @@ export default function App(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff"
+    backgroundColor: "#EFE7DD"
   }
 });
