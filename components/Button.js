@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 import { fontSize } from "../theme/sizes";
 
 export const Button = styled.TouchableOpacity`
-  background-color: #7cceeb;
+  background-color: #5f7195;
   border-radius: 66px;
   height: 53px;
   justify-content: center;

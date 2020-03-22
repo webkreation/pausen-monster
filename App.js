@@ -6,7 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import OnBoardingScreen from "./screens/00_OnBoardingScreen";
+import OnboardingScreen from "./screens/10_OnboardingScreen";
 import BottomTabNavigator from "./navigation/BottomTabNavigator";
 import MainNavigator from "./navigation/MainNavigator";
 import LoginNavigator from "./navigation/LoginNavigator";
@@ -65,6 +65,12 @@ export default function App(props) {
               component={LoginNavigator}
               options={{ headerShown: false }}
             />
+            <Stack.Screen
+              name="Onboarding"
+              component={OnboardingScreen}
+              options={{ headerShown: false }}
+            />
+
             <Stack.Screen
               name="MainNavigator"
               component={MainNavigator}
